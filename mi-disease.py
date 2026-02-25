@@ -96,7 +96,7 @@ def extract_MI_Features(filepath, sampling_rate=100):
                     method="dwt"
                 )
             except:
-                for feat in ['ST_Amplitude', 'ST_Duration', 'T_amplitude', 'T_Inversion', 'Q_Amplitude', 'R_Amplitude', 'QRS_Duration', 'P_Duration']:
+                for feat in ['ST_Amplitude', 'ST_Duration', 'T_Amplitude', 'T_Inversion', 'Q_Amplitude', 'R_Amplitude', 'QRS_Duration', 'P_Duration']:
                     features[f'{lead_name}_{feat}'] = np.nan
                 continue
 
